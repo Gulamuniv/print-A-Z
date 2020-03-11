@@ -1,6 +1,7 @@
-<?php 
-function Print_P($n){
-for ($i=1; $i<=$n ; $i++) { 
+<?php
+
+function pp1($n){
+	for ($i=1; $i<=$n ; $i++) { 
 		echo "* ";
 	}echo "</br>";
 for ($i=1; $i<=$n/2+1 ; $i++) { 
@@ -21,5 +22,5 @@ for ($i=1; $i<=$n/2+1 ; $i++) {
 	echo "</br>";
 }
 }
-Print_P(20);
+pp1(20);
 ?>

@@ -1,6 +1,6 @@
-<?php 
-function Print_P($n){
-for ($i=1; $i<=$n ; $i++) { 
+<?php
+function RR1($n){
+	for ($i=1; $i<=$n ; $i++) { 
 		echo "* ";
 	}echo "</br>";
 for ($i=1; $i<=$n/2+1 ; $i++) { 
@@ -14,12 +14,19 @@ for ($i=1; $i<=$n/2+1 ; $i++) {
 }
   for ($i=1; $i<=$n ; $i++) { 
 		echo "* ";
+	}
+ for ($i=1; $i<=$n ; $i++) { 
+ 	echo "</br>";
+		for ($j=1; $j<=2*$i+1 ; $j++) { 
+			if ($j==$i||$j==1) {
+			echo "*";
+			}else{
+				echo "&nbsp&nbsp&nbsp ";
+			}
+			
+		}
 	}echo "</br>";
 
-for ($i=1; $i<=$n/2+1 ; $i++) { 
-	echo "* ";
-	echo "</br>";
 }
-}
-Print_P(20);
+RR1(30);
 ?>

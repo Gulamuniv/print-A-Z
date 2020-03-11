@@ -31,10 +31,10 @@ function Print_S($n){
 				}
 			
 			}
+ 	
 
-			
-		//echo "$i";
-			echo "</br>";
+ 	
+	echo "</br>";
 	}
 }
 

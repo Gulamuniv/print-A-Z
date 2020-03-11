@@ -1,28 +1,32 @@
 <?php 
-function print_RR($num){
-for ($i=1; $i<=$num ; $i++) {
-	echo "*";
-
-	for ($k=$num/2+1; $k<=$i ; $k++) { 
-		echo "&nbsp&nbsp&nbsp ";
-	} echo "";
-	
-	for ($j=1; $j<=$num; $j++) { 
-		if(($i==$num||$i==$num-1||$i==$num-2||$i==$num-3||$i==$num-4)&&$j==$num){
-         	echo "&nbsp";
-         }
-         elseif ($i==1||$i==$num/2||$j==$num||$j==1) {
-         	echo "* ";
-         }
-         else{
-         	echo "&nbsp&nbsp ";
-         }
-		
+function print_RR($n){
+for ($i=1; $i<=$n ; $i++) { 
+		echo "* ";
+	}echo "</br>";
+for ($i=1; $i<=$n/2+1 ; $i++) { 
+	for ($j=1; $j<=$n; $j++) { 
+		if ($j==1||$j==$n) {
+			echo "*&nbsp ";
+		}else{
+			echo "&nbsp&nbsp&nbsp";
+		}
+	}echo "</br>";
+}
+  for ($i=1; $i<=$n ; $i++) { 
+		echo "* ";
 	}
-	
-	
-	echo "</br>";
+ for ($i=1; $i<=$n ; $i++) { 
+ 	
+		for ($j=1; $j<=2*$i+1 ; $j++) { 
+			if ($j==$i||$j==1) {
+			echo "*";
+			}else{
+				echo "&nbsp&nbsp&nbsp";
+			}
+			
+		}echo "</br>";
+	}echo "</br>";
+
 }
-}
-print_RR(10);
+print_RR(30);
 ?>
